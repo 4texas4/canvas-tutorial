@@ -1,52 +1,29 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Steps Slideshow</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Tutorial Slideshow</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <main class="slideshow-root">
-    <header class="slideshow-header" id="slideHeading" aria-live="polite">
-      <!-- Top heading text is injected by JS -->
-    </header>
 
-    <div class="slideshow-wrap">
-      <button class="nav nav-left" id="navLeft" aria-label="Previous slide">&lt;</button>
+<div class="slideshow-container">
 
-      <div class="viewport" id="viewport" role="region" aria-roledescription="carousel" aria-label="Steps slideshow">
-        <div class="track" id="track">
-          <!-- Slides -->
-          <div class="slide"><img src="https://4texas4.github.io/canvas-tutorial/1.png" alt="Step 1"></div>
-          <div class="slide"><img src="https://4texas4.github.io/canvas-tutorial/2.png" alt="Step 2"></div>
-          <div class="slide"><img src="https://4texas4.github.io/canvas-tutorial/3.png" alt="Step 3"></div>
-          <div class="slide"><img src="https://4texas4.github.io/canvas-tutorial/4.png" alt="Step 4"></div>
-          <div class="slide"><img src="https://4texas4.github.io/canvas-tutorial/5.png" alt="Step 5"></div>
-          <div class="slide"><img src="https://4texas4.github.io/canvas-tutorial/6.png" alt="Step 6"></div>
-          <div class="slide"><img src="https://4texas4.github.io/canvas-tutorial/7.png" alt="Pro Tip"></div>
-        </div>
-      </div>
+    <div id="slideText" class="slide-text"></div>
 
-      <button class="nav nav-right" id="navRight" aria-label="Next slide">&gt;</button>
+    <img id="slideImage" class="slide-image" src="https://4texas4.github.io/canvas-tutorial/1.png">
+
+    <button id="prevBtn" class="nav-button left-btn">&lt;</button>
+    <button id="nextBtn" class="nav-button right-btn">&gt;</button>
+
+    <div class="steps">
+        <span>Steps</span>
+        <div class="steps-buttons" id="stepsButtons"></div>
     </div>
 
-    <nav class="steps-bar" aria-label="Slide steps">
-      <div class="steps-label">Steps</div>
-      <div class="steps-buttons" id="stepsButtons">
-        <button class="step-btn" data-index="0">1</button>
-        <button class="step-btn" data-index="1">2</button>
-        <button class="step-btn" data-index="2">3</button>
-        <button class="step-btn" data-index="3">4</button>
-        <button class="step-btn" data-index="4">5</button>
-        <button class="step-btn" data-index="5">6</button>
-        <button class="step-btn" data-index="6">Tip</button>
-      </div>
-    </nav>
+</div>
 
-    <div id="toast" class="toast" aria-hidden="true">Copied!</div>
-  </main>
-
-  <script src="script.js" defer></script>
+<script src="script.js"></script>
 </body>
 </html>
