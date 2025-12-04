@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    color: black;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.slide-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.slide-text {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    font-weight: bold;
+    color: black;
+    padding: 10px 0;
+    backdrop-filter: blur(8px);
+    background: rgba(255,255,255,0.5);
+}
+
+.nav-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 40px;
+    width: 60px;
+    height: 60px;
+    border: none;
+    border-radius: 20px;
+    background: rgba(255,255,255,0.7);
+    cursor: pointer;
+    user-select: none;
+}
+
+.left-btn {
+    left: 20px;
+}
+
+.right-btn {
+    right: 20px;
+}
+
+.nav-button:hover {
+    background: rgba(255,255,255,0.9);
+}
+
+.steps {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-size: 22px;
+    font-weight: bold;
+    backdrop-filter: blur(6px);
+    background: rgba(255,255,255,0.5);
+    padding: 10px 0;
+}
+
+.steps-buttons button {
+    margin: 0 5px;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: rgba(255,255,255,0.8);
+    font-weight: bold;
+}
+
+.steps-buttons button.active {
+    background: black;
+    color: white;
+}
+
+.given-code {
+    color: blue;
+    cursor: pointer;
+    text-decoration: underline;
+}
